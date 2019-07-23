@@ -8,8 +8,8 @@ type CommonResponse struct {
 type Job struct {
 	CommonResponse
 	Job struct {
-		JobID  string        `json:"job_id"`
-		Params []interface{} `json:"params"`
+		JobID  string                 `json:"job_id"`
+		Params map[string]interface{} `json:"params"`
 	} `json:"job"`
 	Cache struct {
 	} `json:"cache"`
